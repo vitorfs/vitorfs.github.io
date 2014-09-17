@@ -25,7 +25,7 @@ hr {
 }
 
 a {
-  color: #92c35e;
+  color: #4288F3;
 }
 
 p {
@@ -158,7 +158,7 @@ header h1 {
 
 header h1 a {
   text-decoration: none;
-  color: #92c35e;
+  color: #333;
 }
 
 header ul {
@@ -178,7 +178,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #92c35e;
+  color: #4288F3;
 }
 
 main {
