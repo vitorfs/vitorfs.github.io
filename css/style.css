@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+
+body {
+  font-family: Helvetica, Tahoma, sans-serif;
+  background-color: #f6f6f6;
+  color: #333333;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+header, section {
+  margin: 2em;
+}
+
+h1 {
+  font-family: "Rokkitt", Helvetica, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 6em;
+}
+
+h2 {
+  font-family: "Rokkitt", Helvetica, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: .5em 0 .3em;
+}
+
+h3 {
+  font-family: "Rokkitt", Helvetica, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 1em 0 .4em;
+}
+
+h4 {
+  font-family: "Rokkitt", Helvetica, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: .3em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+a {
+  color: #4289ef;
+  text-decoration: none;
+}
+
+small {
+  font-size: 0.4em;
+  color: #999999;
+}
+
+.contact a {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.left-block {
+  width: 230px;
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.left-block .picture img {
+  border-radius: 100px;
+  width: 150px;
+  border: 1px solid #c2c2c2;
+}
+
+.left-block .menu {
+  margin-top: 2em;
+}
+
+.left-block .menu ul {
+  text-align: right;
+}
+
+.left-block .menu ul li:first-child {
+  border-top: 1px solid #c2c2c2;
+}
+
+.left-block .menu ul li {
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.left-block .menu ul li a {
+  font-size: 1.6em;
+  display: block;
+  padding: .8em 1.4em;
+}
+
+.left-block .menu ul li a:hover {
+  background-color: #4289ef;
+  color: #f6f6f6;
+}
+
+.right-block {
+  width: 730px;
+  margin-left: 230px;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  height: 100%;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.follow li {
+  padding: .3em 0;
+}
+
+.follow li label {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-right: .3em;
+}
+
+.follow li a {
+  font-size: 1.4em;
+}
+
+.well {
+  border: 1px solid #c2c2c2;
+  margin-bottom: 2em;
+  padding: 1.6em 1em;
+}
+
+.well small a {
+  font-size: 1.4em;
+  font-family: Helvetica, Tahoma, sans-serif;
+}
+
+.well small a:hover {
+  text-decoration: underline;
+}
