@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Now I Haz Blog"
-date:   2014-09-18 19:01:00
+title:  Now I Haz Blog
+date:   2014-09-17 19:01:00
 categories: blog
 ---
 
