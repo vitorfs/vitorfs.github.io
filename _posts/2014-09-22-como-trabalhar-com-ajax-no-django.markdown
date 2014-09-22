@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Como Trabalhar Com Ajax No Django
+description: Aprenda como trabalhar com requisições Ajax utilizando Python, Django e jQuery.
 date:   2014-09-22 16:12:00
 categories: blog
 tags: django python jquery
