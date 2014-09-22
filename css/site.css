@@ -26,11 +26,20 @@ hr {
 
 a {
   color: #4288F3;
+  text-decoration: none;
 }
 
 p {
   font-size: 1.8em;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
+}
+
+main ul {
+  font-size: 1.8em;
+}
+
+main .post a {
+  border-bottom: 1px solid;
 }
 
 .highlight {
@@ -41,7 +50,7 @@ p {
   background-color: #f0f0f0;
 }
 
-ul {
+header ul {
   margin: 0;
   padding: 0;
 }
@@ -249,4 +258,8 @@ footer ul li a[href*='linkedin']:hover {
 
 footer ul li a[href*='facebook']:hover {
   color: #3b5a94;
+}
+
+.post img {
+  max-width: 800px;
 }
