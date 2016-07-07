@@ -20,33 +20,12 @@ layout: page
 
 {% assign til = site.categories.til.first %}
 
-<p class="text-muted">
-  <small>
-    <strong>By {{ til.author }}</strong>
-    <span style="margin-left: 10px;">{{ til.date | date: "%B %d, %Y" }}</span>
-  </small>
-</p>
-<p class="lead">{{ til.title }}</p>
-
-{{ til.content }}
-
-{% if til.references %}
-  <h4>References</h4>
-  <ol>
-    {% for ref in til.references %}
-      <li><a href="{{ ref }}" target="_blank">{{ ref }}</a></li>
-    {% endfor %}
-  </ol>
-{% endif %}
-
-<p>{% for tag in til.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</p>
+{% include til.html til=til %}
 
 <nav class="context-menu" style="margin-bottom: 0">
   <a href="{{ til.url }}">permalink</a>
   <span class="brand">/</span>
   <a href="{{ til.url }}#disqus_thread">leave a comment</a>
-  <span class="brand">/</span>
-  <a href="{{ til.url }}#share">share this</a>
   <span class="brand">/</span>
   <a href="/til/">archive</a>
 </nav>
