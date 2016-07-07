@@ -1,0 +1,27 @@
+---
+title: Essays · Vitor Freitas
+permalink: /essays/
+---
+
+<h3>Essays</h3>
+<hr class="sm">
+
+{% for essay in site.categories.essays %}
+  <article class="essay">
+    <h4>
+      <a href="{{ essay.url }}">{{ essay.title }}</a>
+    </h4>
+    <p>
+      <small>
+        <strong>By {{ essay.author }}</strong>
+        <span style="margin-left: 10px;">{{ essay.date | date: "%B %d, %Y" }}</span>
+      </small>
+    </p>
+    <p>{{ essay.excerpt }}</p>
+    <p><a href="{{ essay.url }}">Read more →</a></p>
+    <p>
+      {% for tag in essay.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </p>
+  </article>
+  {% if forloop.last != true %}<hr>{% endif %}
+{% endfor %}

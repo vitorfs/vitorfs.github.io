@@ -1,0 +1,18 @@
+---
+layout: research
+title: Projects · Research · Vitor Freitas
+subtitle: Projects
+menu: projects
+---
+
+{% for project in site.research_projects %}
+  <hr>
+  <p>
+    <a href="{{ project.url }}">
+      <img src="{{ project.featured_image }}" alt="{{ project.title }}" title="Read more about {{ project.title }}" style="width: 100%">
+    </a>
+  </p>
+  <p>
+    <a href="{{ project.url }}">Read more about {{ project.title }} →</a>
+  </p>
+{% endfor %}

@@ -1,0 +1,25 @@
+---
+title: Projects · Vitor Freitas
+permalink: /projects/
+---
+
+<h3>Projects</h3>
+<hr class="sm">
+
+<p>Here you will find the projects I currently maintain. For the most part they are related to Django.</p>
+
+{% assign projects = (site.projects | sort: date) | reverse %}
+{% for project in projects %}
+  <hr>
+  <p>
+    <a href="{{ project.url }}">
+      <img src="{{ project.featured_image }}" alt="{{ project.title }}" title="Read more about {{ project.title }}" style="width: 100%">
+    </a>
+  </p>
+  <p>
+    <a href="{{ project.url }}">Read more about {{ project.title }} →</a>
+  </p>
+  <p>
+    <iframe src="https://ghbtns.com/github-btn.html?user={{ project.github_username }}&repo={{ project.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+  </p>
+{% endfor %}

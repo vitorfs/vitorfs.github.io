@@ -1,0 +1,63 @@
+---
+layout: page
+---
+
+<p>
+  <a href="/projects/">← Return to projects list</a>
+</p>
+
+<h3>{{ page.title }}</h3>
+<hr class="sm">
+
+<p>
+  <img src="{{ page.featured_image }}" alt="{{ page.title }}" title="{{ page.title }}" style="width: 100%">
+</p>
+
+<div class="meta">
+  {% if page.website %}
+    <div class="row">
+      <div class="three columns">Website</div>
+      <div class="nine columns"><a href="{{ page.website }}" target="_blank">{{ page.website }}</a></div>
+    </div>
+  {% endif %}
+  <div class="row">
+    <div class="three columns">Source code</div>
+    <div class="nine columns"><a href="https://github.com/{{ page.github_username }}/{{ page.github_repo }}/" target="_blank">https://github.com/{{ page.github_username }}/{{ page.github_repo }}/</a></div>
+  </div>
+  <div class="row">
+    <div class="three columns">Created at</div>
+    <div class="nine columns">{{ page.date | date: "%b %-d, %Y" }}</div>
+  </div>
+  <div class="row">
+    <div class="three columns">Technology</div>
+    <div class="nine columns">{{ page.technology }}</div>
+  </div>
+</div>
+
+{{ content }}
+
+<div>
+  <div class="fb-like" data-href="{{ page.website }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.website }}" data-text="{{ page.title }}" data-via="{{ site.twitter_username }}">Tweet</a>
+  <iframe src="https://ghbtns.com/github-btn.html?user={{ page.github_username }}&repo={{ page.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+</div>
+
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Facebook -->
+<div id="fb-root"></div>
+<style type="text/css">.fb_iframe_widget{vertical-align:top;margin-top:-4px;}</style>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<hr>
+
+<p>
+  <a href="/projects/">← Return to projects list</a>
+</p>

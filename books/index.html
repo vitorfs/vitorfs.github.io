@@ -1,0 +1,13 @@
+---
+title: Books
+subtitle: Now Reading
+layout: books
+permalink: /books/
+menu: now
+---
+
+<ul>
+  {% for book in site.books %}
+    <li><a href="{{ book.url }}">{{ book.title }}</a></li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,59 @@
+---
+title: Contact · Vitor Freitas
+permalink: /contact/
+---
+
+<h3>Contact</h3>
+<hr class="sm">
+
+<p>
+  <strong>University of Oulu</strong><br>
+  Department of Information Processing Science,<br>
+  P.O. Box 3000,<br>
+  FI-90014
+</p>
+
+<div class="row">
+  <div class="three columns">
+    <strong>Email</strong>
+  </div>
+  <div class="nine columns">
+    <a href="mailto:vitor@freitas.com">vitor@freitas.com</a>
+  </div>
+</div>
+<div class="row">
+  <div class="three columns">
+    <strong>Phone</strong>
+  </div>
+  <div class="nine columns">
+    +358 046 5232705
+  </div>
+</div>
+<div class="row">
+  <div class="three columns">
+    <strong>Skype</strong>
+  </div>
+  <div class="nine columns">
+    vitor.fs
+  </div>
+</div>
+
+<hr>
+
+<h4 id="social">Social Networks</h4>
+
+{% for network in site.data.social_networks %}
+  <div class="row">
+    <div class="three columns">
+      <strong>{{ network.name }}</strong>
+    </div>
+    <div class="nine columns">
+      {% if network.url %}
+        <a href="{{ network.url }}" target="_blank">{{ network.url }}</a>
+      {% endif %}
+      {% if network.username %}
+        {{ network.username }}
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}

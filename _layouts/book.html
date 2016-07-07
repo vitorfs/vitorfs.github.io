@@ -1,0 +1,62 @@
+---
+layout: page
+---
+
+<h3>{{ page.title }}</h3>
+<hr class="sm">
+
+<article class="u-cf">
+  <h4>Books details</h4>
+  <div class="meta">
+    <div class="row">
+      <div class="three columns">
+        Authors
+      </div>
+      <div class="nine columns">
+        {{ page.book_author }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns">
+        Publisher
+      </div>
+      <div class="nine columns">
+        {{ page.publisher }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns">
+        Published at
+      </div>
+      <div class="nine columns">
+        {{ page.publication_date | date: "%b %-d, %Y" }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns">
+        Pages
+      </div>
+      <div class="nine columns">
+        {{ page.pages }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns">
+        Website
+      </div>
+      <div class="nine columns">
+        <a href="{{ page.website }}" target="_blank">{{ page.website }}</a>
+      </div>
+    </div>
+  </div>
+
+  <h4>My notes</h4>
+  <p class="text-muted">By {{ page.author }} at {{ page.date | date: "%b %-d, %Y" }}</p>
+  <img src="{{ page.cover }}" class="book-cover" alt="{{ page.title }}" title="{{ page.title }}">
+  {{ content }}
+</article>
+
+{% if jekyll.environment == "production" %}
+  <div id="disqus_thread"></div>
+  <script src="/js/disqus.js"></script>
+{% endif %}

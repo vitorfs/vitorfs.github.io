@@ -1,3 +1,71 @@
-name: Vitor Freitas
-markdown: redcarpet
-pygments: true
+# Site settings
+title: Vitor Freitas
+email: vitor@freitas.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""
+url: "http://vitorfs.com"
+twitter_username: "vitorfs"
+github_username: "vitorfs"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Collections
+collections:
+  books:
+    output: true
+    permalink: /books/:title/
+  experiments:
+    output: false
+  projects:
+    output: true
+    permalink: /projects/:title/
+  research_projects:
+    output: true
+    permalink: /research/projects/:title/
+
+# Site defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+      author: "Vitor Freitas"
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "book"
+  - scope:
+      path: ""
+      type: "experiments"
+    values:
+      github_username: "vitorfs"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      github_username: "vitorfs"
+  - scope:
+      path: "_posts/til"
+      type: "posts"
+    values:
+      category: "til"
+      layout: "til"
+  - scope:
+      path: "_posts/essays"
+      type: "posts"
+    values:
+      category: "essays"
+      layout: "essay"
+  - scope:
+      path: ""
+      type: "research_projects"
+    values:
+      layout: "research_project"
+      menu: "projects"

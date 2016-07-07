@@ -1,11 +1,52 @@
 ---
-layout: default
-title: Vitor Freitas
-description: Systems Analyst, Web Developer, living in Brazil, Juiz de Fora. Currently student of M.Sc. in Software Engineering.
+layout: page
 ---
 
-<div class="text-center">
-  <h2>Vitor Freitas <small>(vitor@freitas.com)</small></h2>
-  <p>Systems Analyst, Web Developer, living in Brazil, Juiz de Fora.</p>
-  <p>Currently student of M.Sc. in Software Engineering.</p>
-</div>
+<h3>About</h3>
+<hr class="sm">
+
+<p>
+  My name is <strong>Vitor Freitas</strong>, I'm a software developer and researcher from Brazil. At the moment, I'm living in Oulu,
+  Finland doing my Ph.D. I'm a passionate software developer, currently working with Python and Django. I also worked
+  several years in industry with Java, C♯ and ASP/VBScript.
+</p>
+
+<a href="/about/">Read more →</a>
+
+</div><div class="card">
+
+<h3>Today I Learned…</h3>
+<hr class="sm">
+
+{% assign til = site.categories.til.first %}
+
+<p class="text-muted">
+  <small>
+    <strong>By {{ til.author }}</strong>
+    <span style="margin-left: 10px;">{{ til.date | date: "%B %d, %Y" }}</span>
+  </small>
+</p>
+<p class="lead">{{ til.title }}</p>
+
+{{ til.content }}
+
+{% if til.references %}
+  <h4>References</h4>
+  <ol>
+    {% for ref in til.references %}
+      <li><a href="{{ ref }}" target="_blank">{{ ref }}</a></li>
+    {% endfor %}
+  </ol>
+{% endif %}
+
+<p>{% for tag in til.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</p>
+
+<nav class="context-menu" style="margin-bottom: 0">
+  <a href="{{ til.url }}">permalink</a>
+  <span class="brand">/</span>
+  <a href="{{ til.url }}#disqus_thread">leave a comment</a>
+  <span class="brand">/</span>
+  <a href="{{ til.url }}#share">share this</a>
+  <span class="brand">/</span>
+  <a href="/til/">archive</a>
+</nav>
