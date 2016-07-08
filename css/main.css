@@ -32,6 +32,16 @@ header ul.social {
   margin-top: -27px;
 }
 
+@media (max-width: 768px) {
+  header ul.social {
+    display: none;
+  }
+  nav.navbar ul li {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+}
+
 header ul.social li {
   list-style: none;
   margin: 0;
