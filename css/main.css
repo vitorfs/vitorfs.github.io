@@ -64,6 +64,7 @@ header ul.social li {
   margin: 0;
   display: inline-block;
   margin-left: 5px;
+  text-transform: lowercase;
 }
 
 nav.navbar {

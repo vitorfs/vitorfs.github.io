@@ -4,11 +4,11 @@
       <a href="/">Vitor <span class="brand">Freitas</span></a>
     </h1>
     <ul class="social">
-      <li><a href="https://github.com/vitorfs" target="_blank">github</a></li>
-      <li><a href="https://twitter.com/vitorfs" target="_blank">twitter</a></li>
-      <li><a href="https://www.linkedin.com/in/vitorfs" target="_blank">linkedin</a></li>
-      <li><a href="https://medium.com/@vitorfs" target="_blank">medium</a></li>
-      <li><a href="http://stackoverflow.com/users/1011272/vitor-freitas" target="_blank">stackoverflow</a></li>
+      {% for account in site.data.social_networks %}
+        {% if account.featured == true %}
+          <li><a href="{{ account.url }}" target="_blank">{{ account.name }}</a></li>
+        {% endif %}
+      {% endfor %}
       <li><a href="/contact/#social">+ more</a></li>
     </ul>
   </div>
