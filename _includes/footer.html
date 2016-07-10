@@ -13,4 +13,6 @@
     </ul>
   </div>
 </footer>
-<script src="/js/ga.js"></script>
+{% if jekyll.environment == "production" %}
+  <script src="/js/ga.js"></script>
+{% endif %}
