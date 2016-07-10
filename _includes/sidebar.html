@@ -16,23 +16,10 @@
       This is a list of books that I'm reading at the moment.{% comment %}<br>
       <a href="/books/archive/">See my past readings →</a>{% endcomment %}
     </p>
-    <h6>
-      <strong>High Performance Django</strong><br>
-      <small>by Peter Baumgartner and Yann Malet</small>
-    </h6>
-    <img src="/img/books/high-performance-django.jpg" alt="High Performance Django" title="High Performance Django">
-    {% comment %}<a href="">Learn more →</a>{% endcomment %}
-    <hr>
-    <h6>
-      <strong>Value-Focused Thinking</strong><br>
-      <small>by Ralph L. Keeney</small>
-    </h6>
-    <img src="/img/books/value-focused-thinking.jpg" alt="Value-Focused Thinking" title="Value-Focused Thinking">
-    <hr>
-    <h6>
-      <strong>The Drunkard's Walk: How Randomness Rules Our Lives</strong><br>
-      <small>By Leonard Mlodinow</small>
-    </h6>
-    <img src="/img/books/the-drunkards-walk.jpg" alt="The Drunkard's Walk: How Randomness Rules Our Lives" title="The Drunkard's Walk: How Randomness Rules Our Lives">
+    {% for book in site.books %}
+      {% if book.reading == true %}
+        {% include book_widget.html book=book %}
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
