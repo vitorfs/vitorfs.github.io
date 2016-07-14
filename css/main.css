@@ -86,6 +86,42 @@ nav.navbar ul li {
   margin-right: 10px;
 }
 
+nav.navbar ul li ul.dropdown {
+  top: 28px;
+  padding: 10px 0;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  border: 1px solid #eee;
+  z-index: 1000;
+  margin: 0;
+  display: none;
+}
+
+nav.navbar ul li ul.dropdown li {
+  display: block;
+  margin-right: 0;
+}
+
+nav.navbar ul li ul.dropdown li a {
+  display: block;
+  padding: 5px 20px;
+  -webkit-transition: all 0.1s ease 0s;
+     -moz-transition: all 0.1s ease 0s;
+       -o-transition: all 0.1s ease 0s;
+          transition: all 0.1s ease 0s;
+}
+
+nav.navbar ul li ul.dropdown li a:hover,
+nav.navbar ul li ul.dropdown li a:active {
+  background-color: #f6f6f6;
+}
+
+.caret {
+  margin-top: -3px;
+}
+
 main {
   margin-top: 30px;
 }

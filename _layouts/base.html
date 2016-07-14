@@ -31,5 +31,9 @@
       <div class="push"></div>
     </div>
     {% include footer.html %}
+    {% if jekyll.environment == "production" %}
+      <script src="/js/ga.js"></script>
+    {% endif %}
+    <script src="/js/site.js"></script>
   </body>
 </html>
