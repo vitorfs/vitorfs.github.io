@@ -10,6 +10,9 @@ url: "http://vitorfs.com"
 twitter_username: "vitorfs"
 github_username: "vitorfs"
 
+gems:
+  - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title/
