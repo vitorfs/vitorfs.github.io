@@ -1,9 +1,8 @@
 ---
 title: "Simple is Better Than Complex"
 featured_image: "/img/projects/sibtc.png"
-github_username: "sibtc"
-github_repo: "sibtc.github.io"
-website: "http://simpleisbetterthancomplex.com"
+github_repo: "simpleisbetterthancomplex.com"
+website: "https://simpleisbetterthancomplex.com"
 technology: "Jekyll"
 date: 2015-11-23
 ---
