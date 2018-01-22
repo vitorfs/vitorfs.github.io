@@ -1,31 +1,54 @@
----
-layout: page
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>vitor freitas</title>
+    <style type="text/css">
+      a {
+        border-bottom: 2px solid;
+        color: #212529;
+        font-weight: 600;
+      }
 
-<h3>About</h3>
-<hr class="sm">
-
-<p>
-  My name is <strong>Vitor Freitas</strong>, I'm a software developer and researcher from Brazil. At the moment, I'm living in Oulu,
-  Finland doing my Ph.D. I'm a passionate software developer, currently working with Python and Django. I also worked
-  several years in industry with Java, C♯ and ASP/VBScript.
-</p>
-
-<a href="/about/">Read more →</a>
-
-</div><div class="card">
-
-<h3>Today I Learned…</h3>
-<hr class="sm">
-
-{% assign til = site.categories.til.first %}
-
-{% include til.html til=til %}
-
-<nav class="context-menu" style="margin-bottom: 0">
-  <a href="{{ til.url }}">permalink</a>
-  <span class="brand">/</span>
-  <a href="{{ til.url }}#disqus_thread">leave a comment</a>
-  <span class="brand">/</span>
-  <a href="/til/">archive</a>
-</nav>
+      a:hover,
+      a:active {
+        text-decoration: none;
+        color: #212529;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid my-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-10">
+          <div class="text-center">
+            <img src="img/picture.jpg" class="mx-auto d-block" alt="Vitor Freitas" style="width: 150px; border-radius: 150px">
+            <h1 class="display-4">hi there, my name is <strong>vitor freitas</strong>.</h1>
+            <p class="lead">i'm a passionate software developer. pythonist & djangonaut.</p>
+            find me online;
+            <a href="https://github.com/vitorfs">github</a> <span class="text-muted">/</span>
+            <a href="https://twitter.com/@vitorfs">twitter</a> <span class="text-muted">/</span>
+            <a href="https://facebook.com/vitorfs">facebook</a> <span class="text-muted">/</span>
+            <a href="https://www.linkedin.com/in/vitorfs">linkedin</a> <span class="text-muted">/</span>
+            <a href="https://instagram.com/vitorfs">instagram</a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+          <p>
+            if you want to get in touch with me, my email address is <a href="mailto:vitor@freitas.com">vitor@freitas.com</a>.
+            if you are looking for my cv, you can find it on my <a href="https://www.linkedin.com/in/vitorfs">linkedin</a>.
+          </p>
+          <p>
+            i blog about python, django and web development on <a href="https://simpleisbetterthancomplex.com">simpleisbetterthancomplex.com</a>.
+            you can also <a href="http://eepurl.com/b0gR51">subscribe to my newsletter</a> to receive updates about my blog posting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
